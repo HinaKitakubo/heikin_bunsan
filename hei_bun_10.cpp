@@ -13,7 +13,7 @@
 using namespace std;
 
 int main() {
-   std::ifstream stream("./Az_kikaku_n1000_10.dat");
+   std::ifstream stream("./Az_kikaku_n10000_10.dat");
    string line;
 
    int row = 0;
@@ -55,7 +55,7 @@ int main() {
           sum_bunsan += bun;
        }
 
-       bunsan = sqrt(sum_bunsan/10.);    //分散値
+       bunsan = sum_bunsan/10.;    //分散値
 
        std::cout << data[i-1][0] << " " << ave << " " << bunsan << std::endl;
        i++;
